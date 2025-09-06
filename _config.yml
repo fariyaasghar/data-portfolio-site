@@ -1,24 +1,27 @@
 title: "Fariya Asghar"
 tagline: "Data Analyst | Transforming Data into Actionable Insights"
+description: "Professional portfolio showcasing data analysis projects"
 url: "https://fariyaasghar.github.io"
 baseurl: "/data-portfolio-site"
+
+# Theme configuration
 theme: jekyll-theme-chirpy
 
-# --- Navigation Tabs ---
+# Navigation
 tabs:
   - about
   - projects
   - contact
   - resume
 
-# --- Author Information ---
+# Author info
 author:
   name: "Fariya Asghar"
   avatar: "/assets/img/avatar.jpg"
   bio: "Data Analyst with expertise in Python, SQL, Tableau, and financial analytics"
   location: "Frankfurt, Germany"
 
-# --- Social Links ---
+# Social links
 social:
   email: "fasghar91@gmail.com"
   links:
@@ -26,18 +29,13 @@ social:
     - https://www.linkedin.com/in/fariya-asghar
     - https://public.tableau.com/app/profile/fariya.asghar
 
-# --- Plugins ---
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-# --- Collections (Required for tabs to work) ---
+# Collections (essential for tabs)
 collections:
   tabs:
     output: true
     sort_by: order
 
-# --- Defaults for Posts ---
+# Defaults
 defaults:
   - scope:
       path: ""
@@ -48,8 +46,24 @@ defaults:
       comments: false
       toc: true
 
-# --- Exclusions ---
+# Plugins (minimal set for GitHub Pages)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude unnecessary files
 exclude:
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - README.md
+  - LICENSE
   - .github
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+timezone: Europe/Berlin
+lang: en
