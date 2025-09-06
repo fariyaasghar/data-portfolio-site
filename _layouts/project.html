@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article class="project">
+  <header>
+    <h1>{{ page.title }}</h1>
+    <p class="project-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      • {{ page.categories | join: ", " }}
+    </p>
+  </header>
+  
+  <div class="project-content">
+    {{ content }}
+  </div>
+  
+  <footer>
+    <div class="project-technologies">
+      <strong>Technologies:</strong> {{ page.technologies | join: ", " }}
+    </div>
+  </footer>
+</article>

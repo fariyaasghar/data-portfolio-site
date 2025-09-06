@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div id="home-layout">
+  
+  <!-- This will display the content from your main index.html file -->
+  {{ content }}
+  
+  <hr style="margin-top: 2rem; margin-bottom: 2rem;">
+  
+  <h2>Project Case Studies</h2>
+  
+  <div class="project-list">
+    {% for post in site.posts %}
+      <div class="project-item">
+        {% if post.image %}
+          <div class="project-thumbnail">
+            <a href="{{ post.url | relative_url }}">
+              <!-- THE FIX: Use relative_url for the image path -->
+              <img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}">
+            </a>
+          </div>
+        {% endif %}
+        <div class="project-details">
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </h3>
+          <!-- THE FIX: Use post.excerpt to show a clean summary -->
+          <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+          <a href="{{ post.url | relative_url }}" class="btn btn-sm btn-primary">View Case Study</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+</div>
