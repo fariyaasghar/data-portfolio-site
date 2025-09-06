@@ -4,10 +4,51 @@ url: "https://fariyaasghar.github.io"
 baseurl: "/data-portfolio-site"
 theme: jekyll-theme-chirpy
 
+# --- Navigation Tabs ---
+tabs:
+  - about
+  - projects
+  - contact
+  - resume
+
+# --- Author Information ---
+author:
+  name: "Fariya Asghar"
+  avatar: "/assets/img/avatar.jpg"
+  bio: "Data Analyst with expertise in Python, SQL, Tableau, and financial analytics"
+  location: "Frankfurt, Germany"
+
+# --- Social Links ---
+social:
+  email: "fasghar91@gmail.com"
+  links:
+    - https://github.com/fariyaasghar
+    - https://www.linkedin.com/in/fariya-asghar
+    - https://public.tableau.com/app/profile/fariya.asghar
+
+# --- Plugins ---
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+# --- Collections (Required for tabs to work) ---
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+# --- Defaults for Posts ---
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: "Fariya Asghar"
+      comments: false
+      toc: true
+
+# --- Exclusions ---
 exclude:
   - Gemfile
   - Gemfile.lock
