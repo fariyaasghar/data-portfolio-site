@@ -1,13 +1,7 @@
 source "https://rubygems.org"
 
-# Theme
-gem "jekyll-theme-chirpy", "~> 7.3"
-
-# Plugins (GitHub Pages compatible)
-group :jekyll_plugins do
-  gem "jekyll-seo-tag", "~> 2.8"
-  gem "jekyll-sitemap", "~> 1.4"
-end
+# For GitHub Pages compatibility
+gem "github-pages", group: :jekyll_plugins
 
 # Windows support
 platforms :mingw, :x64_mingw, :mswin, :jruby do

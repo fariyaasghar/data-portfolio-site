@@ -4,8 +4,8 @@ description: "Professional portfolio showcasing data analysis projects"
 url: "https://fariyaasghar.github.io"
 baseurl: "/data-portfolio-site"
 
-# Theme configuration
-theme: jekyll-theme-chirpy
+# Use remote_theme for GitHub Pages compatibility
+remote_theme: cotes2020/jekyll-theme-chirpy@v7.3.1
 
 # Navigation
 tabs:
@@ -29,7 +29,7 @@ social:
     - https://www.linkedin.com/in/fariya-asghar
     - https://public.tableau.com/app/profile/fariya.asghar
 
-# Collections (essential for tabs)
+# Collections
 collections:
   tabs:
     output: true
@@ -46,12 +46,12 @@ defaults:
       comments: false
       toc: true
 
-# Plugins (minimal set for GitHub Pages)
+# Plugins
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Exclude unnecessary files
+# Exclude
 exclude:
   - Gemfile
   - Gemfile.lock
