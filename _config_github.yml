@@ -1,13 +1,16 @@
+# GitHub Pages specific settings
+remote_theme: cotes2020/jekyll-theme-chirpy
+
+# Override theme setting for GitHub Pages
+theme: null
+
+# Rest same as main config
 title: "Fariya Asghar"
 tagline: "Data Analyst | Transforming Data into Actionable Insights"
 description: "Professional portfolio showcasing data analysis projects"
 url: "https://fariyaasghar.github.io"
 baseurl: "/data-portfolio-site"
 
-# Use theme (not remote_theme for local development)
-theme: jekyll-theme-chirpy
-
-# Navigation
 tabs:
   - about
   - projects
